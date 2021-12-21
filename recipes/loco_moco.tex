@@ -1,0 +1,50 @@
+% !TEX program = xelatex
+
+\documentclass[letterpaper]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage{siunitx}
+\usepackage[nonumber]{cuisine}
+\usepackage{microtype}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+
+\usepackage[margin=0.1cm, layoutwidth=6in, layoutheight=4in]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{6in}{2in}{.25em}{8.5em}{3em}{2em}
+% \RecipeWidths{6in}{2in}{1em}{10em}{3em}{3em}
+\begin{document}
+% \renewcommand*{\recipefont}{\sffamily}
+\begin{recipe}{Loco Moco (New York Times)}{4 Portions, 45 minutes}{}
+  \freeform This classic Hawaiian dish is a ground beef patty above a pile of white rice, smothered with caramelized onion gravy and topped with a fried egg.
+  \ing[1]{lb}{ground beef/turkey}
+  \ing[\fr14]{}{onion, chopped} 
+  \ing[3]{}{garlic cloves}
+  \ing[1 \fr1/2]{tsp}{W13e Sauce}
+  \ing[1]{tsp}{S\&P}
+  In large bowl, combine ingredients. Mix until just combined. Form into four patties about \fr12-inch thick. Place the patties on a plate, cover, and transfer to the refrigerator for 20 minutes.
+  \ing[1]{tbsp}{neutral oil}
+  \ing[\fr34]{}{onion, sliced}
+  Heat oil in large skillet over medium. Add onion and sauté until almost translucent. Reduce heat to low and continue until caramelized. Transfer to a bowl. 
+  \ing[1]{tbsp}{neutral oil}
+  Heat @ medium. Gently place the patties in the pan. Cook until browned, \textasciitilde4 min/side. Transfer patties to a clean plate.
+  \ing[8]{oz}{mushrooms, sliced}
+  \ing[2]{cup}{beef broth}
+  \ing[1 \fr1/2]{tsp}{W13e Sauce}
+  \ing[2]{tsp}{soy sauce}
+  Heat @ medium, +oil if needed. Add mushrooms, and sauté until tender. Add S\&P, caramelized onions, broth, soy sauce, and W13e sauce. Simmer @ medium-low.
+  \ing[2]{tbsp} {cornstarch}
+  Whisk cornstarch w/ 2 tbsp of the broth until smooth. Stir into skillet, simmer until thickened. \textasciitilde5 min.
+  \ing[4]{cups}{steamed white rice}
+  \ing[4]{}{large eggs, fried}
+  \ing[2]{}{chopped scallions}
+  Place 1 cup steamed rice on each plate and top each serving with one patty, then the gravy, a fried egg and chopped scallions.
+
+  % \freeform\hrulefill
+  \end{recipe}
+
+\end{document}

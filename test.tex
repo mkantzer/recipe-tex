@@ -1,3 +1,5 @@
+% !TEX program = xelatex
+
 \documentclass[letterpaper]{article}
 % \usepackage[utf8]{inputenc} % this is needed for umlauts
 % \usepackage[ngerman]{babel} % this is needed for umlauts
@@ -5,17 +7,22 @@
 \usepackage{siunitx}
 \usepackage[nonumber]{cuisine}
 \usepackage{microtype}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
 
 \usepackage[margin=0.125cm, layoutwidth=6in, layoutheight=4in]{geometry}
 % Total | number of servings | step number | ingredient | quantity | units
 \RecipeWidths{6in}{2in}{1em}{10em}{3em}{3em}
 \begin{document}
-
+% \renewcommand*{\recipefont}{\sffamily}
 \begin{recipe}{Zabaglione alla Marsala}{4 Portions}{\fr12 hour}
   \freeform This is a well-known Italian recipe which is
   great for piling on the calories.
   \ingredient[6]{}{egg yolks}
-  \Ing{\hspace{2em}literally anything}
+  \Ing{\hspace{8em}literally anything}
   \ingredient[2]{oz}{granulated sugar}
   \ingredient[6--8]{tbsp}{Marsala (or sherry)}
   \ingredient[\fr14]{oz}{gelatine}
