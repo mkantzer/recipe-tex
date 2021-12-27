@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage{siunitx}
+\usepackage[nonumber]{cuisine}
+\usepackage{microtype}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+
+\begin{recipe}{Mike's Pan Sauce}{5 minutes}{}
+  \freeform \\A decent pan sauce for burgers, chicken, whatever, using the bits from the cooked meat.\\
+  \Ing{all leftover fond}
+  \Ing{1 shallot, chopped}
+  \Ing{drizzle of olive oil}
+  \Ing{1 tsp rosemary, chopped}
+  \Ing{mushrooms, chopped}
+  Heat in pan @ medium. Add the rest. Cook, tossing, until softened.
+  \Ing{1 TBSP jam/whatever}
+  \Ing{\fr12 cup stock, or bullion cube}
+  \Ing{\fr14 cup water}
+  \Ing{5 tsp balsamic vinegar}
+  Add the bits, stir to combine. Let simmer 2-3 minutes, until \textit{thick and saucy}
+  \Ing{1 TBSP butter}
+  \Ing{S\&P, to taste}
+  Remove from heat. Add butter and season. Stir to melt.
+  \newstep Serve over meat
+
+  \end{recipe}
+
+\end{document}
