@@ -1,0 +1,44 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Crispy Chicken Stir Fry}{20 minutes}{}
+  \freeform Decent stir fry, that works with basically any veggie. 
+  \Ing{2lb Chicken Breast, cut to 2in}
+  \Ing{3 TBSP cornstarch }
+  Toss cut up chicken in cornstarch.
+  \Ing{2 TBSP sesame oil}
+  In large skillet, heat oil till glistening. In small batches, add chicken and crisp, 8 min. Add oil if needed.
+  \Ing{2 TBSP sesame oil}
+  \Ing{\fr34 lb Green Beans, trimmed}
+  Add oil and heat. Add green beans, until blistered, 5 min. Remove from pan.
+  \Ing{3 minced garlic cloves}
+  \Ing{1 TBSP minced ginger}
+  \Ing{\fr14 cup soy sauce or tamari}
+  \Ing{1 tsp chili paste}
+  \Ing{\fr14 Sea Salt}
+  Heat to medium low, cool off. Add Garlic, ginger, soy sauce, paste, salt. Stir till garlic is fragrant. 
+  \newstep Add chicken and veggies back to pan, stir to coat.
+  \Ing{Sesame Seeds}
+  Serve with with sesame seeds
+
+  \end{recipe}
+
+\end{document}
