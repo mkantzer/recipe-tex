@@ -1,0 +1,51 @@
+% !TEX program = xelatex
+
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage{siunitx}
+\usepackage[nonumber]{cuisine}
+\usepackage{microtype}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{.25em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large}
+
+\begin{document}
+% \renewcommand*{\recipefont}{\sffamily}
+\begin{recipe}{Loco Moco (New York Times)}{4 Portions, 45 minutes}{}
+  \freeform This classic Hawaiian dish is a ground beef patty above a pile of white rice, smothered with caramelized onion gravy and topped with a fried egg.
+  Set a bowl over an ice bath
+  \newstep
+  \ing[1 \fr12]{cup}{Heavy Cream}
+  \ing[\fr12]{cup}{Almond Milk} 
+  \ing[\fr13]{cup}{dark cocoa powder}
+  \ing[\fr13]{cup}{Swere Sweetener}
+  \ing[\fr13]{cup}{Xylitol}
+  In med saucepan over medium heat, combine. Whisk until well combined, stir until 160\degreeF 
+
+  \ing[3]{}{Egg Yolks}
+  Whisk yolks in a medium bowl. Slowly add 1 cup of cream mixture, whisking. Add back to saucepan, whisking. Cook till 165\degreeF, or spoon-coating
+  \ing[2]{oz}{unsweetened chocolate}
+  Remove from heat. Add chopped chocolate. Sit 5 min, then whisk till smooth.
+  \newstep
+  Pour into icy bowl, cool 10 min. Wrap, fridge for 3 hours
+  \ing[\fr14]{cup}{Almond Milk}
+  \ing[1 \fr12]{tbsp}{vodka}
+  \ing[\fr12]{tsp}{vanilla extract}
+  \ing[\fr18]{tsp}{salt}
+  Whisk in the rest. 
+  \newstep
+  Churn to directions of curner
+  \newstep
+  freeze till firm
+  \end{recipe}
+
+\end{document}
