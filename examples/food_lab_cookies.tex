@@ -1,0 +1,52 @@
+% !TEX program = xelatex
+
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage{siunitx}
+\usepackage[nonumber]{cuisine}
+\usepackage{microtype}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{.25em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large}
+
+\begin{document}
+% \renewcommand*{\recipefont}{\sffamily}
+\begin{recipe}{Chocolate Chip Cookies (Food Lab)}{28 Cookies}{}
+  \freeform Gotta Brown That Butter
+
+
+  \ing[8]{oz}{unsalted butter}
+  \ing[1]{}{ice cube}
+  in med pan, med-high heat, cook butter. Swirl constantly, 5 min till nutty. Remove from heat, add ice swirl, cool in fridge
+
+  \ing[10]{oz}{AP Flour}
+  \ing[\fr34]{tsp}{baking soda}
+  \ing[2]{tsp}{kosher salt}
+  Whisk together in large bowl
+  \ing[5]{oz}{granulated sugar}
+  \ing[2]{large}{eggs}
+  \ing[2]{tsp}{vanilla extract}
+  Whisk in stand mixer, med-high, 5 min
+  \ing[5]{pz}{brown sugar}
+  Paddle to mixer. Add  brown sugar, cooled butter to egg mixture. Mix med, 15 sec. Add flour mix, 15 sec
+  \ing[8]{oz}{semisweet chips, chopped}
+  add to mix, 15 sec. Transfer to airtight, fridge overnight
+  \newstep
+  Preheat Oven to 325. Scoop 3 TBSP balls onto baking sheet. Tear in half, flip round.
+  \newstep
+  bake 13-16 min, rotate halfway through
+
+  \ing[]{}{Coarse Salt}
+  After removal, sprinkle with salt, press down a bit. Cool 2 min, transfer to racks, for cooling
+  \end{recipe}
+
+\end{document}
