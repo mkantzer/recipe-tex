@@ -1,0 +1,67 @@
+% !TEX TS-program = xelatex
+
+% \documentclass[a6paper]{mikescards}
+\documentclass[]{mikescards}
+
+\usepackage{blindtext}
+\usepackage{parcolumns}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+\begin{document}
+\begin{recipe}{Dr Greene's Chicken Soup}{3, 4 hours?}{MOM}
+
+\begin{parcolumns}[colwidths={1=100pt}, rulebetween]{2}
+  \colchunk{
+    \begin{enumerate}
+      \item \textbf{Chicken}
+      \item 4 breasts
+      \item 4 thighs
+      \item 8 drumsticks
+      \item 6 cup stock
+      \item ---------
+      \item Bag of Big Carrots
+      \item 1 white onion
+      \item 2 Leeks
+      \item 2 piece celery
+      \item 1 tomato
+      \item 1 parsnip
+      \item 1 white rutabaga
+      \item 1 yellow rutabaga
+      \item 5 sprig parsley
+      \item 6 clove garlic
+      \item 2 sprig thyme
+      \item 1 bay leaf
+      \item 1 chicken bullion
+      \item Salt, Pepper
+    \end{enumerate}
+  }
+  \colchunk{
+    \begin{enumerate}
+      \item \textsl{Fixed recipe, b/c Doc is a flavor coward}
+      \item
+      \item Put chicken in a \textbf{LARGE} pot. Add stock \& 6-8 cup water. 
+      \item Boil, mixing fat back in from time to time.
+      \item Peal/Half/Quarter/Trim veggies as needed.
+      \item 
+      \item Add everything else. Boil -> simmer for \textbf{2 hours}.
+      \item \hspace{5mm} Carrots should be soft but NOT mushy.
+      \item 
+      \item Toss the bad veggies. Keep: Carrots, Onion, Celery.
+      \item 
+      \item Remove and shred chicken, setting aside.
+      \item 
+      \item Put a sieve over clean pot. Ladel soup through it. 
+      \item \hspace{5mm} We're trying to remove big chunks of fat, but not \textsl{all} of it.
+      \item
+      \item Add the good veggies and chicken back
+      \item
+      \item Serve with egg noodles or matzo balls.
+    \end{enumerate}
+  }
+\end{parcolumns}
+
+\end{recipe}
+\end{document}
