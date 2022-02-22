@@ -1,0 +1,41 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+
+\begin{recipe}{Roasted Salmon With Jalapeño, Honey and Lime    (NYT)}{5 minutes}{}
+  \freeform Serve with steamed white or brown rice, spooning the extra glaze over the salmon and rice.
+  \Ing{\fr{14} cup honey}
+  \Ing{3 jalapeño, thinly sliced}
+  \Ing{2 TBSP apple cider vinegar}
+  \Ing{1 TBSP soy/tamari sauce}
+  Heat oven to \textbf{400 \textdegree}. Combine sauce in small saucepan, boil, then simmer for \textbf{10 min}. Set aside
+  \Ing{salmon fillets}
+  \Ing{olive oil}
+  \Ing{salt}
+  Pat salmon dry. Oil up a baking dish, put salmon on. Brush with OO, Salt. Pour glaze, jalapeños over salmon
+  \newstep Roast for \textbf{6 minutes}. Baste. Roast another \textbf{6-8 min}
+  \Ing{\fr{12} lime}
+  \Ing{cilantro, fresh, chopped}
+  \Ing{steamed rice}
+  Serve with rice on side. Squeeze lime over everything. Spoon glaze over everything. Sprinkle with salt, cilantro. 
+  \end{recipe}
+
+\end{document}
