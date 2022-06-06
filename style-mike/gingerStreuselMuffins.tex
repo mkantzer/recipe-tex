@@ -1,0 +1,54 @@
+% !TEX TS-program = xelatex
+
+% \documentclass[a6paper]{mikescards}
+\documentclass[]{mikescards}
+
+\usepackage{blindtext}
+\usepackage{parcolumns}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+\begin{document}
+\begin{recipe}{Ginger Streusel Muffins}{30 min}{Fun City Discord}
+
+\begin{parcolumns}[colwidths={1=100pt}, rulebetween]{2}
+  \colchunk{
+    \begin{enumerate}
+      \item \textbf{streusel}
+      \item 0.5 C AP Flour
+      \item 0.25 C Oats
+      \item 0.25 C Granulated Sugar
+      \item 0.25 tsp Salt
+      \item 4 tbsp butter, room temp
+		\item some cinnamon
+      \item ---------
+      \item 0.25 cup crema/sour cream
+      \item 1 TBSP hot sauce
+    \end{enumerate}
+  }
+  \colchunk{
+    \begin{enumerate}
+      \item \textbf{Steak and Bread}
+      \item Heat 1 TBSP oil in large ban, med-high. Dry steak, season S\&P.
+      \item Cook, turning often, 125\textdegree F, 8 min total
+      \item Transfer to cuing board, tent w/ foil, rest 5 min
+      \item Brush 1 side of each bread slice w/ oil
+      \item Cook medium, oil down, 2 min
+      \item ---------
+      \item \textbf{Avo Spread}
+      \item Remove pits, scoop flesh to bowl
+      \item Mash with fork (coarse)
+      \item Add cilantro, lime juice/zest, scallions, garlic, S\&P
+      \item ---------
+      \item \textbf{Crema}
+      \item Small bowl, stir together crema \& hot sauce
+      \item ---------
+      \item \textbf{ASSEMBLE THE SANDWICH}
+    \end{enumerate}
+  }
+\end{parcolumns}
+
+\end{recipe}
+\end{document}
