@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{2em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Turmeric-Black Pepper Chicken With Asparagus        (NYT)}{15 min}{}
+  \freeform Serve with rice. Can flex basically any veggies
+  \ing[3]{TBSP}{honey}
+  \ing[\fr34]{tsp}{pepper, to taste}
+  \ing[\fr12]{tsp}{kosher salt}
+  \ing[\fr14]{cup}{H2O}
+  In small bowl, stir together. Set aside.
+  \ing[2]{TBSP}{AP flour}
+  \ing[1 \fr12]{tsp}{ground tumeric}
+  \ing[1]{tsp}{kosher salt}
+  \ing[1]{lb}{cubed chicken thigh}
+  In med bowl, stir together. Add chicken. Toss to coat.
+  \ing[1]{TBSP}{coconut/canola oil}
+  In skillet, heat oil (med-high). Add chicken, cook till gold-brown, 2-3min/side.
+  \ing[12]{oz}{Asparagus, trimmed \& sliced on angle}
+  Add asparagus, season w/S, stir, cook till crisp-tender, 1-2min.
+  \newstep Add honey mix, cook \& stir till chicken cooked through \& sauce thickens. 2-3 min.
+  \ing[1]{tsp}{rice vinegar / soy sauce}
+  Remove from heat, stir in vinegar. Season w/ S\&P.
+  \Ing{1 lime, wedged} 
+  Serve w/ lime squeezed over top. Maybe with rice?
+  \end{recipe}
+
+\end{document}

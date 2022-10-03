@@ -1,0 +1,61 @@
+% !TEX TS-program = xelatex
+
+% \documentclass[a6paper]{mikescards}
+\documentclass[]{mikescards}
+
+\usepackage{blindtext}
+\usepackage{parcolumns}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+\begin{document}
+\begin{recipe}{Bagels}{30m - 2h50m}{King Arthur Flour}
+\begin{parcolumns}[colwidths={1=120pt}, rulebetween]{2}
+  \colchunk{
+    \begin{enumerate}
+      \item \textbf{Dough}
+      \item 9g SAF instant dry yeast
+      \item 480g bread flour
+      \item 12g kosher salt
+      \item 14g (1 TBSP) barley malt syrup
+      \item 303g water, lukewarm
+      \item 
+      \item \textbf{To Boil}
+      \item 1814g water
+      \item 15g sugar
+      \item 28g barley malt syrup
+      \item paper towels for draining
+    \end{enumerate}
+  }
+  \colchunk{
+    \begin{enumerate}
+      \item \textbf{Dough}
+      \item Combine ingredients, and knead vigorously, \textbf{10m} in mixer.
+      \item Place dough in greased bowl, cover and rise. \textbf{1-1.5h}
+      \item \textbf{Shape}
+      \item Grease 2 baking sheets and transfer dough. 
+      \item Divide into 8-12 pieces.
+      \item Cup a piece beneath palm. Quick, circular motions to make tight ball with tiny seam on bottom.
+      \item Let rest \textbf{30m}.
+      \item Preheat oven \textbf{425\textdegree F}. Prep pot to boil.
+      \item Poke hole in each with damp thumb, and stretch to ring.
+      \item Place on greased pan, covered. Fridge \textbf{24-36h}.
+      \item \textbf{Boil}
+      \item 4 at a time, boil bagels. \textbf{2m, flip, 1m}. 
+      \item Drain on paper towels \textbf{2-3s}, then transfer to a sheet.
+      \item \textbf{Bake: 20-25m}, flip at \textbf{15m}, till blistered and golden brown.
+      \item Cool at least \textbf{15min} on a rack
+    \end{enumerate}
+  }
+\end{parcolumns}
+\vspace{1pt}\hrule\relax\vspace{3pt}
+
+  \textbullet\textit{\textbf{Note:} in a pinch: brown sugar instead of syrup.}
+
+  \textbullet\textit{\textbf{For Tang:} use 100g sourdough starter \& 255g water instead.}
+
+  \textbullet\textit{\textbf{To Top:} brush just-pre-bake with glaze of 1 egg white \& 1TBSP water, and sprinkle seeds.}
+\end{recipe}
+\end{document}

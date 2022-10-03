@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Island Glazed Pork Tenderloin}{30 minutes}{}
+  Preheat Oven to 350.
+  \Ing{2 TBSP Olive Oil}
+  Drizzle cast iron skillet with oil and preheat on stove till hot.
+  
+  \Ing{2 tsp salt}
+  \Ing{1 tsp cinnamon}
+  \Ing{1 tsp cumin}
+  \Ing{1 tsp chili powder}
+  \Ing{\fr12 tsp black pepper}
+  Whisk together rub stuff
+  \Ing{1 \fr12 lb Pork Tenderloin}
+  Sprinkle rub stuff on tenderloin, massaging into the meat
+  \newstep Brown tenderloin on skillet on all sides \textbf{3-4 min}
+  \Ing{\fr34 cup brown sugar}
+  \Ing{2 tsp minced garlic}
+  \Ing{1 TBSP sriracha}
+  Mix glaze and spread over tenderloin
+  \newstep Transfer to oven, bake for \textbf{20 min} until cooked through
+  \newstep Cut to \textbf{1 in} thick slices. Drizzle glaze from pan on loin before serving
+
+  \end{recipe}
+
+\end{document}

@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Baked Sweet Hawaiian Chicken}{1h 20m}{}
+  \freeform Warm Curry. Serve with rice! 
+
+  \ing[3-4]{}{Chicken Breasts}
+  \ing[]{taste}{Salt \& Pepper}
+  Preheat oven to 325. Cut breasts into bite-sized pieces. Season.
+  \ing[1\fr12]{cup}{Cornstarch}
+  \ing[3]{}{Eggs, beaten}
+  Put in different bowls. Dip chicken in starch, then eggs.
+  \ing[\fr14]{cup}{Canola Oil}
+  Heat in skillet, med-high. Brown Chicken, then move to 9x13 dish.
+  \ing[1]{cup}{Pineapple Juice}
+  \ing[\fr12]{cup}{Brown Sugar}
+  \ing[\fr13]{cup}{Soy Sauce}
+  \ing[1]{tsp}{Garlic, Minced}
+  \ing[\fr12]{TBSP}{Cornstarch}
+  \ing[1]{}{Red Pepper, Chopped}
+  \ing[1]{can}{Pineapple Tidbits}
+  Whisk together in a bowl. Pour over chicken.
+  \newstep Bake, \textbf{1 hour}. Stir every \textbf{15 min}
+  \newstep Serve with rice
+  \end{recipe}
+
+\end{document}

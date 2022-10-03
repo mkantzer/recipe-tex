@@ -1,0 +1,48 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{3em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Coconut Chicken Curry        (NYT)}{1 Hour}{}
+  \freeform Warm Curry. Serve with rice! 
+
+  \ing[2\fr12]{lb}{chicken thigh}
+  \ing[1]{TBSP}{paprika}
+  \ing[\fr12]{tsp}{tumeric}
+  \ing[2]{tsp}{kosher salt}
+  Trim fat, cut into \fr12 - 1 in pieces. Add spices, mix well. Let sit at room temp while finishing prep
+  \ing[\fr13]{cup}{canola oil}
+  \ing[2]{}{yellow onions, diced}
+  \ing[4]{(lol)}{garlic cloves}
+  Large pot, heat oil. Sauté onions med-low 8-10min. Add garlic, 5 min
+  \ing[13]{oz}{unsweetened coconut milk}
+  \ing[1\fr12]{TBSP}{fish sauce}
+  \ing[1\fr12]{cup}{water}
+  Add chicken, stir to spice onion. Add coconut, almost boil, 4 min. add fish sauce, water, near-boil. 
+  \ing[1]{tsp}{curry powder}
+  \ing[\fr12]{tsp}{cayenne}
+  Simmer, stirring, 30-45 min. Add spices, simmer briefly, remove from heat
+  \newstep let sit 20 min to soak spice into chicken
+  \Ing{Cooked Rice or Noodles}
+  \ing[1]{cup}{cilantro}
+  \ing[1]{}{lime, cut to wedges}
+  Simmer right before serving on rice. Top w/ cilantro \& lime
+  \end{recipe}
+
+\end{document}
