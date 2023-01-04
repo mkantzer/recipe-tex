@@ -1,4 +1,4 @@
 # recipe-tex
 LaTeX rendering system for turning some kind of recipe doc into a rendered card
 
-To re-render all recipes, `./render.sh`
+Everything in here is nonsense, and I have no idea what i'm doing. 
