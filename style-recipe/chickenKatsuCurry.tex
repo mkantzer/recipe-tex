@@ -1,0 +1,59 @@
+% !TEX program = xelatex
+\documentclass[a6paper,landscape]{article}
+% \usepackage[utf8]{inputenc} % this is needed for umlauts
+% \usepackage[ngerman]{babel} % this is needed for umlauts
+% \usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[nonumber]{cuisine}
+\usepackage{fontspec}
+\usepackage{manfnt}
+
+\setmainfont[Ligatures=TeX]{Comic Neue}
+\setsansfont[Ligatures=TeX]{Comic Neue}
+
+% \usepackage[margin=0.0cm, layoutwidth=6in, layoutheight=4in]{geometry}
+\usepackage[a6paper, landscape, margin=0.0cm]{geometry}
+% Total | number of servings | step number | ingredient | quantity | units
+\RecipeWidths{146mm}{10em}{1em}{8.5em}{2em}{2em}
+\renewcommand*{\recipetitlefont}{\large\bfseries}
+\renewcommand*{\recipestepnumberfont}{\bfseries}
+\renewcommand*{\recipefreeformfont}{\slshape}
+
+\begin{document}
+
+\begin{recipe}{Chicken Katsu Curry with Rice       (Woks Of Life)}{1h}{}
+  % \freeform Serve with rice.
+  \ing[1]{tbsp}{veg oil}
+  \ing[2]{}{onions, chop big}
+  Heat dutch oven on med. Add oil, onion till translucent/brown, \bf{2-3 min}.
+
+  \ing[1\bf{lol}]{clove}{garlic, mince}
+  \ing[1]{tbps}{tomato paste}
+  \ing[1]{tsp}{Worcestershire}
+  Add ingredients, cook till fragrant, \bf{1 min}.
+
+  \ing[2]{tbps}{curry pwdr}
+  \ing[1]{tsp}{salt}
+  \ing[1]{tsp}{sugar}
+  Cook \bf{1 min}.
+
+  \ing[8]{oz}{potato, 2cm \mancube}
+  \ing[8]{oz}{carrot, 2cm \mantriangleup}
+  \ing[2]{cup}{chicken stock}
+  Simmer, cover, cook till tender, \bf{20-25 min}.
+
+  \ing[2]{lbs}{chicken brest}
+  \ing[1]{}{egg}
+  \ing[]{}{flour, panko}
+  Prep chicken as if for Schnitzel. \newline flat $\rightarrow$ dry $\rightarrow$ S\&P $\rightarrow$ flour $\rightarrow$ egg $\rightarrow$ panko.
+  \newline Cook as if for Schnitzel. May need to batch. \bf{6 min} $\updownarrow$ \bf{5-6 min}.
+
+  \ing[1]{tbsp}{cornstarch}
+  \ing[1]{tbsp}{water}
+  Mix to slurry, then add to sauce. 
+
+  \ing[1]{tbsp}{butter}
+  When thick, stir in butter. S\&P to taste.
+  \newstep Serve with rice.
+  \end{recipe}
+
+\end{document}
